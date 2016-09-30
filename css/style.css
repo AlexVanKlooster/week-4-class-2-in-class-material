@@ -1,0 +1,90 @@
+/*
+WEEK 4 class 1:
+1. Same HTML element may have more than 1 CSS class
+2. a:link, a:visited, a:hover
+3. Handle background image
+4. Background image vs <img>.  Use <img> tag when the image is related to the content.
+5. Github: http://www.youtube.com/watch?v=P6SOVdNVylY
+*/
+/*
+    COLOR SCHEME:
+#78C0F9 - baby blue
+#FFDDCE - pale brown
+#FFFFFF - white
+#FFDDE6 - pale pink
+#FE8684 - intensive pink */
+
+/* -- Roming default margin -- */
+body {
+    margin: 0;
+}
+
+/* -- Make your image responsive -- */
+main img {
+    width: 100%;
+    height: auto;
+}
+
+/* -- Setting the content width to 75% -- */
+.box {
+    width: 75%;
+    margin: 0 auto;
+}
+
+/* -- Same HTML element may have more than 1 CSS class (like this one). -- */
+.another-class-example {
+    background-color: #78C0F9;
+}
+
+/* -- Setting a background color and background image - banner -- */
+.bg-header {
+    background-color: #78C0F9;
+    background-image: url(../images/banner.jpg);
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: 0 25%;
+    padding: 1rem;
+}
+
+/* -- Removing the margin top from <h1> tag --*/
+.bg-header h1 {
+    margin: 0 0 1rem 0;
+}
+
+/* -- Removing the margin top from <h2> tags --*/
+main h2 {
+    margin: 0 0 1rem 0;
+}
+
+/* -- Setting a background color - only reason we have this div -- */
+.bg-first {
+    background-color: #FFDDCE;
+    padding: 1rem;
+}
+
+/* -- Setting a background color - only reason we have this div -- */
+.bg-second {
+    background-color: #ffffff;
+    padding: 1rem;
+}
+
+/* -- Setting a background color - only reason we have this div -- */
+.bg-footer {
+    background-color: #FFDDE6;
+    padding: 1rem;
+}
+
+/*-- CSS pseudo classes related to link tags -- */
+a:link {
+    color: #FFDDE6;
+}
+a:visited {
+    color: #DDDDDD
+}
+a:active {
+    color: #000000
+}
+a:hover {
+    text-decoration: none;
+}
